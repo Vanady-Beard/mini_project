@@ -1,0 +1,135 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    max-width:100%;
+    overflow-x: hidden;
+    
+   } 
+
+
+
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color:black;
+    color: white;
+    
+  
+    
+
+}
+
+header ul {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    background-color:hotpink;
+    padding:10px 20px;
+    margin:0 auto;
+    width:100%;
+   
+}
+
+ header ul,header nav ul li {
+    padding: 0;
+    margin: 0;
+} 
+header nav ul li {
+    margin-right:30px;
+   
+}
+header nav ul li:last-child{
+    margin-right:0;
+
+}
+
+nav ul li.icon{
+    flex-grow:0;
+    
+    
+}
+header li a{
+    text-decoration:none;
+    color:white;
+    display:flex;
+    align-items:center;
+    
+}
+
+header li.icon a img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%; 
+    border: 2px solid white;  
+    padding:5px;  
+    background-color: hotpink; 
+}
+
+header li a:hover{
+    color:black;
+    text-decoration:underline;
+    font-size: large;
+}
+main {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section {
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-10px);
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+button {
+    background-color: hotpink;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FFB6C1; 
+}
+
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        margin-right: 5px;
+    }
+}
+
+footer{
+    
+    background-color:hotpink;
+    width:100%;
+    text-align:center;
+    padding:10px;
+    
+} 

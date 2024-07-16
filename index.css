@@ -1,0 +1,150 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    max-width:100%;
+    overflow-x: hidden;
+    
+   } 
+   html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color:black;
+    color: white;
+    
+  
+    
+
+}
+
+header ul {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    background-color:hotpink;
+    padding:10px 20px;
+    margin:0 auto;
+    width:100%;
+   
+}
+
+ header ul,header nav ul li {
+    padding: 0;
+    margin: 0;
+} 
+header nav ul li {
+    margin-right:30px;
+   
+}
+header nav ul li:last-child{
+    margin-right:0;
+
+}
+
+nav ul li.icon{
+    flex-grow:0;
+    
+    
+    
+}
+header li a{
+    text-decoration:none;
+    color:white;
+    display:flex;
+    align-items:center;
+    
+}
+
+header li.icon a img {
+    height: 30px;
+    width: auto;
+    border-radius: 50%; 
+    border: 2px solid white;  
+    padding:5px;  
+    background-color: hotpink; 
+   
+}
+
+header li a:hover{
+    color:black;
+    text-decoration:underline;
+    font-size: large;
+}
+
+.image1{
+    border-radius:400px;
+    height:auto;
+    margin:auto;
+    border: solid white 5px;
+    display:block;
+    max-width:20%;
+    
+    
+    
+}
+
+header h1{
+    display:flex;
+    justify-content:center;
+    color:hotpink
+    
+    
+}
+
+header h2{
+    display:flex;
+    justify-content:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    color:hotpink;
+    padding-bottom:10px;
+}
+
+main{
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.about-me{
+    border: dotted pink 5px;
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    align-items: center;
+    width:50%;
+    
+}
+.about-me>h3{
+    color:hotpink;
+    text-decoration:underline;
+    padding:10px;
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        margin-right: 5px;
+    }
+}
+
+footer{
+    
+    background-color:hotpink;
+    width:100%;
+    text-align:center;
+    padding:10px;
+    
+} 
+
